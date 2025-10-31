@@ -1,0 +1,21 @@
+{
+  "name": "sgyminus",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "build-copy": "bunx tsc && cp manifest.json dist/ && cp -r images dist/images",
+    "build": "bun run build-copy"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/angular": "^1.8.9",
+    "@types/chrome": "^0.1.27",
+    "@types/react": "^19.2.2"
+  }
+}
